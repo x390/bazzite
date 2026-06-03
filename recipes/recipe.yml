@@ -28,6 +28,7 @@ modules:
     install:
       packages:
         - mullvad-vpn
+        - rclone
    # remove:
    #   packages:
    #     # example: removing firefox (in favor of the flatpak)
