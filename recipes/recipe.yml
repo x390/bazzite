@@ -29,6 +29,7 @@ modules:
       packages:
         - mullvad-vpn
         - rclone
+        - wine
    # remove:
    #   packages:
    #     # example: removing firefox (in favor of the flatpak)
