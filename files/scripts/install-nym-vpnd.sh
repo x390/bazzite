@@ -2,12 +2,12 @@
 set -e
 
 # 1. Fetch the absolute latest Core tag
-LATEST_TAG=$(curl -s https://api.github.com/repos/nymtech/nym-vpn-client/releases | \
-             grep -o "nym-vpn-core-v[0-9]*\.[0-9]*\.[0-9]*" | \
-             sort -Vr | \
-             head -n 1)
+LATEST_TAG=$(curl -fsSL https://api.github.com/repos/nymtech/nym-vpn-client/releases \
+    | grep -o '"tag_name": "nym-vpn-core-v[^"]*"' \
+    | head -n1 \
+    | cut -d '"' -f4)
 
-# Strip the prefix to get just the version number (e.g., 1.25.0)
+# Strip the prefix to get just the version number (e.g., 2026.10.0)
 NYM_VERSION=${LATEST_TAG#nym-vpn-core-v}
 
 echo "Installing NymVPN Daemon version: ${NYM_VERSION}"
