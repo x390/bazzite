@@ -31,6 +31,7 @@ modules:
         - rclone
         - wine
         - wivrn
+        - piper
    # remove:
    #   packages:
    #     # example: removing firefox (in favor of the flatpak)
