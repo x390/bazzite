@@ -22,12 +22,8 @@ modules:
       - install-nym-vpnd.sh
 
   - type: dnf
-    repos:
-      files:
-        - https://repository.mullvad.net/rpm/stable/mullvad.repo
     install:
       packages:
-        - mullvad-vpn
         - rclone
         - wine
         - wivrn
