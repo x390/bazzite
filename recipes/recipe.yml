@@ -28,8 +28,6 @@ modules:
         - wine
         - wivrn
         - piper
-        - zed
-        - zed-cli
    # remove:
    #   packages:
    #     # example: removing firefox (in favor of the flatpak)
