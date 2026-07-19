@@ -22,12 +22,16 @@ modules:
       - install-nym-vpnd.sh
 
   - type: dnf
+    repos:
+      files:
+        - https://repos.fyralabs.com/terra$releasever
     install:
       packages:
         - rclone
         - wine
         - wivrn
         - piper
+        - zed
    # remove:
    #   packages:
    #     # example: removing firefox (in favor of the flatpak)
