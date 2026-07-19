@@ -24,7 +24,7 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://repos.fyralabs.com/terra$releasever
+        - https://repos.fyralabs.com/terra44
     install:
       packages:
         - rclone
