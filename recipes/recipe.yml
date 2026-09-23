@@ -20,7 +20,7 @@ modules:
   - type: script
     scripts:
       - install-nym-vpnd.sh
-      - enable-terra.sh
+      #- enable-terra.sh
 
   - type: dnf
     install:
