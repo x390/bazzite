@@ -32,6 +32,7 @@ modules:
         - zed
         - zed-cli
         - uv
+        - python3-tkinter
    # remove:
    #   packages:
    #     # example: removing firefox (in favor of the flatpak)
