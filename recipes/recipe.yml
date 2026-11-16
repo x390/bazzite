@@ -23,6 +23,9 @@ modules:
       - enable-terra.sh
 
   - type: dnf
+    repos:
+      copr:
+        - "@xr-sig/xrizer"
     install:
       packages:
         - rclone
