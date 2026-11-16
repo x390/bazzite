@@ -28,6 +28,7 @@ modules:
         - rclone
         - wine
         - wivrn
+        - xrizer
         - piper
         - zed
         - zed-cli
